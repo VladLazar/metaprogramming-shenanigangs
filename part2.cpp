@@ -14,11 +14,11 @@ int main() {
 
     static_assert(
             std::abs(rect::integrate(0, 10) - 403.331) < eps,
-            "Compile time rectangular_interpolation yielded the wrong result");
+            "Compile time rectangular interpolation yielded the wrong result");
 
     static_assert(
             std::abs(trap::integrate(0, 10) - 403.337) < eps,
-            "Compile time rectangular_interpolation yielded the wrong result");
+            "Compile time trapezoidal interpolation yielded the wrong result");
 
     std::cout << "Integrate (x^2) + (2*x) - 3 with rectangular interpolation "
               << "between 0 and 10: " 
